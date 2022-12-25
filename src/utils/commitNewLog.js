@@ -31,6 +31,7 @@ function commitNewLog(log) {
         body: JSON.stringify({
             message: 'New log for date ' + date + ' and time ' + log['startTime'] + '00 to ' + log['endTime'] + '00',
             content: fileContent,
+            branch: 'logs'
         }),
     }).then((response) => response.json()).catch((error) => console.error(error));
 
