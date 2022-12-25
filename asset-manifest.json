@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/daily-existance-logger/static/css/main.073c9b0a.css",
-    "main.js": "/daily-existance-logger/static/js/main.8ae89db7.js",
-    "static/js/787.4eb4ae02.chunk.js": "/daily-existance-logger/static/js/787.4eb4ae02.chunk.js",
-    "static/media/logo.svg": "/daily-existance-logger/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/daily-existance-logger/static/css/main.38d4a252.css",
+    "main.js": "/daily-existance-logger/static/js/main.d57e060c.js",
     "index.html": "/daily-existance-logger/index.html",
-    "main.073c9b0a.css.map": "/daily-existance-logger/static/css/main.073c9b0a.css.map",
-    "main.8ae89db7.js.map": "/daily-existance-logger/static/js/main.8ae89db7.js.map",
-    "787.4eb4ae02.chunk.js.map": "/daily-existance-logger/static/js/787.4eb4ae02.chunk.js.map"
+    "main.38d4a252.css.map": "/daily-existance-logger/static/css/main.38d4a252.css.map",
+    "main.d57e060c.js.map": "/daily-existance-logger/static/js/main.d57e060c.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.8ae89db7.js"
+    "static/css/main.38d4a252.css",
+    "static/js/main.d57e060c.js"
   ]
 }
