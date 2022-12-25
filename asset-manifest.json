@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ani1311/dailyExistanceLogger/static/css/main.38d4a252.css",
+    "main.js": "/ani1311/dailyExistanceLogger/static/js/main.d57e060c.js",
+    "index.html": "/ani1311/dailyExistanceLogger/index.html",
+    "main.38d4a252.css.map": "/ani1311/dailyExistanceLogger/static/css/main.38d4a252.css.map",
+    "main.d57e060c.js.map": "/ani1311/dailyExistanceLogger/static/js/main.d57e060c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38d4a252.css",
+    "static/js/main.d57e060c.js"
+  ]
+}
