@@ -1,10 +1,5 @@
-import { Buffer } from 'buffer';
-
-// base url
-const BASE_URL = 'https://api.github.com/repos/ani1311/dailyExistanceLogger/contents';
-
-// api key
-const API_KEY = "Z2l0aHViX3BhdF8xMUFIUFBSQVEwVFVYMmh4enlzWkg2X1dMblZkbTZqVUlXNFp5MmlMVUxuV25jbHg0QmtMUVJQbmpxTmRxUTA3cXdVSkdENVFOWW15WGJKVkIx"
+import { API_CONTENTS_URL } from '../data/api.js';
+import { commitGithubFile, getGithubFileSha } from './githubApiUtils.js';
 
 function commitNewLog(log) {
     let date = log['date'];
@@ -17,26 +12,28 @@ function commitNewLog(log) {
     let fileName = log['startTime'] + "00:" + log['endTime'] + '00.json';
     datePath = "logs/" + datePath;
 
-    let url = BASE_URL + '/' + datePath + '/' + fileName;
-    let fileContent = Buffer.from(JSON.stringify(log)).toString('base64')
+    let url = API_CONTENTS_URL + '/' + datePath + '/' + fileName;
+    let fileContent = JSON.stringify(log);
 
-    let api_key = Buffer.from(API_KEY, 'base64').toString('utf8');
+    let sha = getGithubFileSha(url);
 
-    fetch(url, {
-        method: 'PUT',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + api_key,
-        },
-        body: JSON.stringify({
-            message: 'New log for date ' + date + ' and time ' + log['startTime'] + '00 to ' + log['endTime'] + '00',
-            content: fileContent,
-            branch: 'logs'
-        }),
-    }).then((response) => response.json()).catch((error) => console.error(error));
+    commitGithubFile(url, fileContent, 'New log for date ' + date + ' and time ' + log['startTime'] + '00 to ' + log['endTime'] + '00', sha);
 
+    // let api_key = getApiKey();
 
-
+    // fetch(url, {
+    //     method: 'PUT',
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //         'Authorization': 'Bearer ' + api_key,
+    //     },
+    //     body: JSON.stringify({
+    //         message: 'New log for date ' + date + ' and time ' + log['startTime'] + '00 to ' + log['endTime'] + '00',
+    //         content: fileContent,
+    //         branch: 'logs'
+    //     }),
+    // }).then((response) => {
+    // }).catch((error) => console.error(error));
 
 }
 

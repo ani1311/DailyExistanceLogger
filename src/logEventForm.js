@@ -1,14 +1,15 @@
 import React from 'react';
 import { Form, Button, Col } from 'react-bootstrap';
-import './logEventForm.css'
+import './form.css'
 import { commitNewLog } from './utils/commitNewLog';
+import { useNavigate } from "react-router-dom";
+
 
 function LogEventForm() {
-
-
     const today = new Date();
     const todayString = today.toISOString();
     const todayDate = todayString.split('T')[0];
+    let navigate = useNavigate();
 
     const [formValues, setFormValues] = React.useState({
         date: todayDate,
@@ -37,10 +38,11 @@ function LogEventForm() {
         }
 
         if (event.target.elements.activity.matches(':focus')) {
-            return; // Do not submit the form
+            return;
         }
 
         commitNewLog(formValues);
+        navigate("/daily-existance-logger/");
     };
 
     return (

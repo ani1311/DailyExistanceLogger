@@ -13,6 +13,8 @@ form label {
     display: block;
 }
 
+button,
+form .habit-select,
 form input[type="date"],
 form input[type="number"] {
     width: 100%;
@@ -31,6 +33,18 @@ form .activity-field {
     font-size: 18px;
     text-align: left;
     vertical-align: top;
+}
+
+button:hover {
+    outline: 2px solid blue;
+    background-color: blue;
+    color: white;
+}
+
+button:focus {
+    outline: 2px solid red;
+    background-color: red;
+    color: white;
 }
 
 form input[type="submit"] {
