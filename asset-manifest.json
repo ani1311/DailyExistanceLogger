@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/daily-existance-logger/static/css/main.38d4a252.css",
-    "main.js": "/daily-existance-logger/static/js/main.5a56eb78.js",
+    "main.css": "/daily-existance-logger/static/css/main.a184600f.css",
+    "main.js": "/daily-existance-logger/static/js/main.2297dde7.js",
     "index.html": "/daily-existance-logger/index.html",
-    "main.38d4a252.css.map": "/daily-existance-logger/static/css/main.38d4a252.css.map",
-    "main.5a56eb78.js.map": "/daily-existance-logger/static/js/main.5a56eb78.js.map"
+    "main.a184600f.css.map": "/daily-existance-logger/static/css/main.a184600f.css.map",
+    "main.2297dde7.js.map": "/daily-existance-logger/static/js/main.2297dde7.js.map"
   },
   "entrypoints": [
-    "static/css/main.38d4a252.css",
-    "static/js/main.5a56eb78.js"
+    "static/css/main.a184600f.css",
+    "static/js/main.2297dde7.js"
   ]
 }
