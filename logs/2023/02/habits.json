@@ -7,6 +7,10 @@
 		"wake-up": {
 			"time": 8,
 			"note": ""
+		},
+		"study": {
+			"time": "9:47",
+			"note": "Computer graphics assignment 3: TBN calculation "
 		}
 	}
 }
