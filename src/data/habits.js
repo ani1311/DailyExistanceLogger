@@ -5,6 +5,7 @@ export const habits = [
     "social-media",
     "work",
     "study",
+    "class",
     "tech-stuff",
     "music",
     "walk",
