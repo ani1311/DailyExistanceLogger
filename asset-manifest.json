@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/daily-existance-logger/static/css/main.1f845f82.css",
-    "main.js": "/daily-existance-logger/static/js/main.90957cbc.js",
+    "main.js": "/daily-existance-logger/static/js/main.4b446df0.js",
     "index.html": "/daily-existance-logger/index.html",
     "main.1f845f82.css.map": "/daily-existance-logger/static/css/main.1f845f82.css.map",
-    "main.90957cbc.js.map": "/daily-existance-logger/static/js/main.90957cbc.js.map"
+    "main.4b446df0.js.map": "/daily-existance-logger/static/js/main.4b446df0.js.map"
   },
   "entrypoints": [
     "static/css/main.1f845f82.css",
-    "static/js/main.90957cbc.js"
+    "static/js/main.4b446df0.js"
   ]
 }
