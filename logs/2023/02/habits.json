@@ -15,6 +15,10 @@
 		"timepass": {
 			"time": "10:9",
 			"note": "Preparing for class and stuff"
+		},
+		"class": {
+			"time": "12:2",
+			"note": ""
 		}
 	}
 }
