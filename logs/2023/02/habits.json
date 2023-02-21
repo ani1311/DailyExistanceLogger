@@ -3,6 +3,10 @@
 		"go-to-sleep": {
 			"time": 0,
 			"note": ""
+		},
+		"wake-up": {
+			"time": 8,
+			"note": ""
 		}
 	}
 }
