@@ -1,7 +1,7 @@
 import { API_CONTENTS_URL } from '../data/api.js';
 import { getGithubFile, commitGithubFile, getGithubFileSha } from './githubApiUtils.js';
 
-async function updateHabit(habit) {
+async function updateHabit(habit, note) {
 
     let completeDate = new Date();
 
@@ -42,10 +42,13 @@ async function updateHabit(habit) {
         contents[date] = {};
     }
     if (contents[date][habit] === undefined) {
-        contents[date][habit] = hours;
+        contents[date][habit] = {
+            "time": hours,
+            "note": note
+        };
     }
 
-    contents = JSON.stringify(contents);
+    contents = JSON.stringify(contents, null, '\t');
     let sha = await getGithubFileSha(url);
     commitGithubFile(url, contents, "Updated habit " + habit + " for date " + date, sha);
 }

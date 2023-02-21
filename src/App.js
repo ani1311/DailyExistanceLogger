@@ -1,6 +1,6 @@
 import LogEventForm from "./logEventForm";
-import LogHabitForm from "./logHabitForm";
-import Home from "./home";
+import LogHabitForm from "./habit/logHabitForm";
+import Home from "./index/index";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 

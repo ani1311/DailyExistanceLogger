@@ -1,0 +1,13 @@
+input {
+    height: 100px;
+    line-height: 100px;
+    width: 80%;
+}
+
+div {
+    text-align: center;
+}
+
+button {
+    width: 80%;
+}
