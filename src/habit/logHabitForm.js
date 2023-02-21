@@ -18,7 +18,9 @@ function LogHabitForm() {
 
     }
     const handleNoteChange = (event) => {
-        setNote(event.target.value);
+        if (event !== undefined) {
+            setNote(event.target.value);
+        }
     }
 
     setTimeout(handleNoteChange, 1000)

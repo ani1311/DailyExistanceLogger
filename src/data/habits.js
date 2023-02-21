@@ -1,5 +1,14 @@
 export const habits = [
     "wake-up",
+    "stretching",
+    "timepass",
+    "social-media",
+    "work",
+    "study",
+    "tech-stuff",
+    "music",
+    "walk",
     "workout",
-    "go-to-sleep"
+    "reading",
+    "go-to-sleep",
 ];

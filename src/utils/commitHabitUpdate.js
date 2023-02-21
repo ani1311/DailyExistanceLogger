@@ -9,7 +9,7 @@ async function updateHabit(habit, note) {
     let date = completeDate.toISOString().split('T')[0];
 
     // get current time
-    let hours = completeDate.getHours();
+    let time = String(completeDate.getHours()) + ":" + String(completeDate.getMinutes());
 
 
     // split date of format YYYY-MM-DD and store result in a variable of format YYYY/MM
@@ -43,7 +43,7 @@ async function updateHabit(habit, note) {
     }
     if (contents[date][habit] === undefined) {
         contents[date][habit] = {
-            "time": hours,
+            "time": time,
             "note": note
         };
     }
